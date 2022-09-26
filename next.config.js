@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  experimental: {
+    swcPlugins: [
+      //
+      ["@swc/plugin-emotion", {}]
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
